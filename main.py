@@ -51,10 +51,9 @@ def embark():
                 print("You gave your Barbie doll an unsightly haircut.")
             else:
                 print("Could not find that toy")
-        # elif party_favor == 'B':
         else:
             book_choice = input(
-                "Do you prefer to read The Canterbury Tales(C) or Paddington(P)?")
+                "Do you prefer to read The Canterbury Tales (C) or Paddington (P)?")
             if book_choice == 'C':
                 print("Unfortunately, you are too young for Chaucer.")
             elif book_choice == 'P':
@@ -88,7 +87,8 @@ def embark():
             print("Could not organize that activity")
     elif numeric_age > 20:
         print("You're an adult!")
-        charity = "You're too old for a birthday party. Spend time volunteering at your local animal shelter instead. Do you want to work with cats (C) or dogs (D)?"
+        charity = input(
+            "You're too old for a birthday party. Spend time volunteering at your local animal shelter instead. Do you want to work with cats (C) or dogs (D)?")
         if charity == 'C':
             cat_activity = input(
                 "Do you want to feed cats (F) or groom (G) cats?")
