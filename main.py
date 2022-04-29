@@ -115,6 +115,9 @@ def game():
                                     if ch1122end in ['y', 'Y', 'Yes', 'yes', 'YES']:
                                         game()
                 else:
+                    print("You walk around for a while then walk home")
+                    time.sleep(1)
+                    print("GAME OVER")
                     ch111end = str(input('Restart Game? [y/n]'))
                     if ch111end in ['y', 'Y', 'Yes', 'yes', 'YES']:
                         game()
