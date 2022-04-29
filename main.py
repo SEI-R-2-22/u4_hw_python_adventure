@@ -48,9 +48,13 @@ def game():
                     time.sleep(1)
                     print('~~~~~~~~~~~~~ You run following the trail...~~~~~~~~~~')
                     time.sleep(2)
+                    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                     print("You come around the corner and in the open cabinet below the sink....")
+                    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                     time.sleep(2)
+                    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                     print("Is your neighbors kid your wife's babysitting with a bottle of ketchup")
+                    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                     ch121end = str(input('Restart Game? [y/n]'))
                     if ch121end in ['y', 'Y', 'Yes', 'yes', 'YES']:
                         game()
@@ -60,10 +64,59 @@ def game():
                     if ch122end in ['y', 'Y', 'Yes', 'yes', 'YES']:
                         game()
             else:
+                print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                 print("As you walk into the park you see something shining in the grass...")
+                print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                 ch111 = str(input("Walk over and pick it up? [y/n]"))
                 if ch111 in ['y', 'Y', 'Yes', 'yes', 'YES']:
-                    time.sleep(2)
+                    time.sleep(1)
+                    print('~~~~~~~~~~~~~~~~~')
                     print("Its a lock box...")
+                    print('~~~~~~~~~~~~~~~~~')
+                    ch112 = str(input("Try to open it? [y/n]"))
+                    if ch112 in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                        try_unlock = int(input("Enter 3 digits 1-3:"))
+                        if try_unlock == 312:
+                            print("You Got IT!!!")
+                            time.sleep(2)
+                            print("Theres a million pennys inside...")
+                            print("Don't spend em all in one place.")
+                            time.sleep(2)
+                            print(".....")
+                            print("Also Good Luck Cashing Em In Nowadays")
+                            time.sleep(1)
+                            print("YOU WIN !!!!")
+                            time.sleep(1)
+                            ch112end = str(input('Restart Game? [y/n]'))
+                            if ch112end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                                game()
+                        else:
+                            ch113 = str(input("Try to open it again? [y/n]"))
+                            if ch113 in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                                try_unlock = int(input("Enter 3 digits 1-3:"))
+                                if try_unlock == 312:
+                                    print("You Got IT!!!")
+                                    time.sleep(2)
+                                    print("Theres a million pennys inside...")
+                                    print("Don't spend em all in one place.")
+                                    time.sleep(2)
+                                    print(".....")
+                                    print("Also Good Luck Cashing Em In Nowadays")
+                                    time.sleep(1)
+                                    print("YOU WIN !!!!")
+                                    time.sleep(1)
+                                    ch112end = str(input('Restart Game? [y/n]'))
+                                    if ch112end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                                        game()
+                                else:
+                                    print("GAME OVER")
+                                    time.sleep(1)
+                                    ch1122end = str(input('Restart Game? [y/n]'))
+                                    if ch1122end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                                        game()
+                else:
+                    ch111end = str(input('Restart Game? [y/n]'))
+                    if ch111end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                        game()
     else: print('death')
 game()
