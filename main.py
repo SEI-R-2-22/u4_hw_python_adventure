@@ -25,8 +25,8 @@ def game():
             print("BANG")
             time.sleep(2)
             print("GAME OVER YOU'RE TOAST")
-            ch1end = str(input('Restart Game? [y/n]'))
-            if ch1end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+            ch11end = str(input('Restart Game? [y/n]'))
+            if ch11end in ['y', 'Y', 'Yes', 'yes', 'YES']:
                 game()
         else: 
             print("You drop the note and run for your life...")
@@ -41,6 +41,29 @@ def game():
                 time.sleep(1)
                 print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
                 time.sleep(1)
-                ch121 = str(input("Follow the trail?"))
+                ch121 = str(input("Follow the trail? [y/n]"))
+                if ch121 in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                    time.sleep(1)
+                    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+                    time.sleep(1)
+                    print('~~~~~~~~~~~~~ You run following the trail...~~~~~~~~~~')
+                    time.sleep(2)
+                    print("You come around the corner and in the open cabinet below the sink....")
+                    time.sleep(2)
+                    print("Is your neighbors kid your wife's babysitting with a bottle of ketchup")
+                    ch121end = str(input('Restart Game? [y/n]'))
+                    if ch121end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                        game()
+                else:
+                    print("You decide to go to sleep waking up to realize everything was fine...")
+                    ch122end = str(input('Restart Game? [y/n]'))
+                    if ch122end in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                        game()
+            else:
+                print("As you walk into the park you see something shining in the grass...")
+                ch111 = str(input("Walk over and pick it up? [y/n]"))
+                if ch111 in ['y', 'Y', 'Yes', 'yes', 'YES']:
+                    time.sleep(2)
+                    print("Its a lock box...")
     else: print('death')
 game()
