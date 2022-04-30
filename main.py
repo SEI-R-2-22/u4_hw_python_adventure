@@ -1,13 +1,15 @@
 import time
-import random
 
-# Create your own adventure with python here
+# Story Time
+# I honestly didnt know where this adventure would take me
+# When I started it, but in the end I liked the way it turned out...
 def game():
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('Walking down the street you come to a fork in the road')
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     time.sleep(3)
     print("One side of the road is dark and the other is light...")
+    # path 1
     ch1 = str(input("Choose the dark path? [y/n]: "))
     if ch1 in ['y', 'Y', 'Yes', 'yes', 'YES']:
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
