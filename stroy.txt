@@ -1,0 +1,26 @@
+Start: You are off on an adventure. You see 2 paths in front of you. Where do you go? 
+    choice 1: Forrest
+        Scene: As you journey through the forrest, you start to hear whispers in front of you. You think to yourself:
+        choice 1: Do I Press on?
+            Scene: You carry on. Nothing is going to stop you. Suddenly, out of nowhere, you spot a troll. As you back away you step on a branch and catch his attention. Do you ....?
+                choice 1: Run
+                    result: The troll laugh's at you as you coward away. 
+                choice 2: Stand your ground
+                    result: You realize you have no weapons. You gather your courage and start running towards him, screaming at the top of your longs. The troll, never having heard such a scream, panics and flees. You realize you are safe for now.
+                choide 3: ummm......
+                    result: The troll rushes toward you and as he reaches out to grab you, you blackout.
+        choice 2: Turn back? 
+            scene: You get cold feet. You think you're not ready yet. Do you ...?
+            choice 1: head back home?
+                result: Tomorrow is another day.
+            choice 2: hype yourself up?
+                result: After pumping yourself up, you finally decide to pick a path.
+    Choice 2: Mountains
+        scene: You're walking down the mountain path and a cloud of fog decends upon you. You start seeing shadows move in front of you. 
+        choice 2: turn back
+            scene: You get cold feet. You think you're not ready yet. Do you ...?
+            choice 1: head back home?
+                result: Tomorrow is another day.
+            choice 2: hype yourself up?
+                result: After pumping yourself up, you finally decide to pick a path.
+        choice 3: 
