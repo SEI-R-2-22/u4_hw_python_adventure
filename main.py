@@ -49,5 +49,11 @@ def play():
            else: 
                print("they gonna get you regardless but run")
          else:
-             print("Lets just try and survive today") 
+             print("Lets just try and survive today")
+    again = input("do you want to play again?")
+    if again == "yes":
+        play()
+    else:
+        print("Dont accept any tapes in the mail")
+
 play()
