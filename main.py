@@ -3,8 +3,8 @@ def game():
     setAnswer = False
     answer = ''
     print('You are off on an adventure! You pack your things and head towards the edge of the village. You see 2 paths in front of you. Where do you go? (A/B)')
-    print('a. Forrest')
-    print('b. Mountains')
+    print('a. Forest')
+    print('b. Mountain')
 
     while not setAnswer:
         answer = input('Answer: ')
@@ -13,7 +13,7 @@ def game():
 
     if answer.lower() == 'a':
         setAnswer = False
-        print('As you journey through the forrest, you start to hear whispers in front of you. You think to yourself: (A/B)')
+        print('As you journey through the forest, you start to hear whispers in front of you. You think to yourself: (A/B)')
         print('a. Do I Press on?')
         print('b. Do I Turn back?')
 
@@ -49,17 +49,17 @@ def game():
 
             while not setAnswer:
                 answer = input('Answer: ')
-                if answer.lower() == 'a':
+                if answer.lower() == 'a' or answer.lower() == 'b':
                     setAnswer = True
 
             if answer.lower() == 'a':
-                print("You open your door and wonder what happened? Was I not ready? did I forget somehting? We'll try again tomorrow.")
+                print("You open your door and wonder what happened? Was I not ready? Did I forget somehting? We'll try again tomorrow.")
             elif answer.lower() == 'b':
                 print('After pumping yourself up, you finally decide to pick a path.')
 
     elif answer.lower() == 'b':
         setAnswer = False
-        print("You're walking down the mountain path and a cloud of fog decends upon you. You start seeing shadows move in front of you. You think to yourself: (A/B)")
+        print("You're walking down the mountain path and a cloud of fog descends upon you. You start seeing shadows move in front of you. You think to yourself: (A/B)")
         print('a. Like that is going to stop me.')
         print('b. Do I Turn back?')
 
@@ -80,14 +80,14 @@ def game():
                 if answer.lower() == 'a' or answer.lower() == 'b' or answer.lower() == 'c':
                     setAnswer = True
 
-            if answer.lower() == 'a' or answer.lower() in 'light your torch.':
+            if answer.lower() == 'a':
                 print("You grab a match and light a spark. It wasn't until the you saw the spark turn green that you knew this was a mistake. BOOOOOM!!!")
 
-            if answer.lower() == 'b' or  answer.lower() in 'close your eyes.':
+            if answer.lower() == 'b':
                 print("You take the advice of the whispers and decide to close your eyes. You start to move foward and can feel the fog dissapear. You open your eyes and realize you've made it past the mountain path. You can't beleive what just happen and this is only the beginning.")
 
-            if answer.lower() == 'c' or answer.lower() in 'track down the whispers.':
-                print('"Who are you! Where are you!" You start tracking down the voice. after twist and turns you no longer know where you are. You have lost the path. Will you ever get out of the mountain? No one but you will know the answer.')
+            if answer.lower() == 'c':
+                print('"Who are you! Where are you!" You start tracking down the voice. After twist and turns you no longer know where you are. You have lost the path. Will you ever get out of the mountain? No one but you will know the answer.')
             
         elif answer.lower() == 'b':
             setAnswer = False
