@@ -53,7 +53,7 @@ def playGame():
                 'Welcome, try to get used to the cold! Are you a city person or a fishing person? ')
             if city == 'city':
                 print(
-                    'Welcome to Chicago! Help yourself to a hot dog, a deep dish pizza, and a whole lot of wind!')
+                    'Welcome to Chicago! Help yourself to a deep dish pizza!')
                 playAgain()
             elif city == 'fishing':
                 print(
