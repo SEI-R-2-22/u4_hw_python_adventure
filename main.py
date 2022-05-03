@@ -1,13 +1,3 @@
-# def start_game(): 
-#     res = input("Greetings adventurer! You must've been traveling a long time. Would you like a drink at the tavern or quest to kill another beast?  (drink/quest) ").lower().strip()
-
-#     if res == "quest":
-#         res = input("Rumor is there's trouble up at Glenn's Farm as well as a Griffin wreacking havoc in the foothills. Where would you like to go? (farm/griffin) ").lower().strip()
-#         if res == "farm":
-#             res = input("When you arrive you are greeted by Glenn who begs you to hurry and kill the goblins in the fields.").lower().strip()
-
-
-
 def start_game():
     response = input(
         "Let's head to the grocery store. (y/n) ")
